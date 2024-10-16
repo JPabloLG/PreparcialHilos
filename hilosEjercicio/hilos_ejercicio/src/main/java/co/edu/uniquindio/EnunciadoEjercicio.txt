@@ -1,0 +1,38 @@
+Hilos
+Trabajo a realizar
+Hilo 1 que cree un arreglo e imprima sus valores. Tiempo de espera en cada iteración : 1 segundo
+Hilo 2 que cree un entero y lo multiplique por el mismo 10 veces. Tiempo de espera en cada iteración : 1.5 segundo
+Hilo 3 que imprima el nombre del mismo hilo 15 veces. Tiempo de espera en cada iteración : 500 ms
+
+
+4. Investigar método Join para los hilos (threads).
+Construya 2 hilos (t1 y t2) que realicen las asignaciones de las instrucciones S2 y S3. 
+En el main() se debe lanzar a ejecución t1 y t2 una vez que terminen se realizan las instrucciones S4
+El main() debe esperar a que terminen t1 y t2, utilizando la instrucción: join.
+
+
+
+Instrucciones:
+
+S1 = inicializar un N = 10
+         inicializar un String  palabra = “otorrinolaringologia”
+S2 = sumaRecursiva(N) - T1
+S3 = contarVocales(palabra) - T2
+S4 = S2 * S3
+         imprimir resultado
+
+5. Hilos sincronización
+Paso1:  Hilo 1: Escribir en consola cierta información que se va a estar concatenado a una variable String durante un tiempo determinado (6 s).
+
+Paso 2: Hilo 2: Leer la variable, mostrarla y borrar la información escrita por el hilo 1.
+
+String variable = “hola”+”hola”+”hola”
+String var = “hola”+”hola”+”hola”
+mostrar: imprimir en consola (var)
+String var = “”;
+
+Paso 3: Hacer que los hilos una vez que terminen puedan volver a comenzar. Por ejemplo inicia el hilo 1 y cuando termine inicia el hilo 2, una vez termine vuelve  iniciar de nuevo el hilo 1 seguido del hilo 2,y así sucesivamente durante  un tiempo de 20 segundos.
+long tac = System.currentTimeMillis()
+tac= 160000
+tf = 160000 + 20000
+tac = 180001 > (180000)   (ya pasaron 20 segundos)
